@@ -3,9 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="styles/stylesHeader.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
     <title>Web</title>
 </head>
 <body>
-    
+    <header class="header">
+        <nav class="menu container">
+            <div class="menu__box menu__box--primary">
+                <h1 class="menu__title"><a class="menu__titleLink" href="#">Conveyance</a></h1>
+                <button id="menu__button" class="menu__button">MENU</button>
+            </div>
+            <div id="menu__box--secundary"class="menu__box menu__box--secundary  container">
+                <ul class="menu__list">
+                        <li class="menu__item"><a class="menu__link" href="#">HOME</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">ABOUT</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">SERVICES</a></li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">DROPDOWN</a>
+                            <ul class="menu__list menu__list--submenu">
+                                <li class="menu__item"><a class="menu__link" href="#">GALLERY</a></li>
+                                <li class="menu__item"><a class="menu__link" href="#">STATS</a></li>
+                                <li class="menu__item"><a class="menu__link" href="#">BLOG</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu__item"><a class="menu__link" href="#">CONTACT</a></li>
+                    </ul>
+                </div>
+        </nav>
+    </header>
+    <section>
+        <img src="img/230px-HTML5_logo_and_wordmark.svg.png" alt="">
+    </section>
 </body>
+<script src="scripts/scripts.js"></script>
 </html>
