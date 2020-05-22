@@ -36,8 +36,20 @@
     font-size: var(--font-link);
 }
 /**************************** Styles Menu ***************************/
+.header__container{
+    position: relative;
+}
+.menu{
+   display: none;
+}
+.menu--activate{
+    display: initial;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 100%;
+}
 .menu__list{
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -66,21 +78,7 @@
     font-weight: 600;
     padding: 6px 0px;
 }
-.header__container{
-    position: relative;
-}
-.menu{
-    position: absolute;
-    display: none;
-}
 
-.menu--activate{
-    display: initial;
-    position: relative;
-    left: 0;
-    right: 0;
-    top: 100%;
-}
 /*****************Styles Sub Menu*******************/
 .submenu{
     display: none;
