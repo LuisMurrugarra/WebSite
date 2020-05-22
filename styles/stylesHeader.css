@@ -6,6 +6,7 @@
 :root{
     --font-title : 30px;
     --font-link  : 14px;
+    --color-gray :  rgba(209, 214, 221,0.5);
 }
 /******************************Styles Header*********************************/
 .header{
@@ -16,20 +17,20 @@
     max-width: 1440px;
     margin: auto;
 }
-.menu__box{
+.header__box{
     display: flex;
     justify-content: space-between;
     
 }
-.menu__titleLink{
+.header__titleLink{
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
     font-size: var(--font-title);
     color: #333;
 }
-.menu__button{
+.header__button{
     color: #2d2c2c;
-    background-color: #f4f5f7;
+    background-color: var(--color-gray);
     padding: 5px 15px;
     border:0;
     font-size: var(--font-link);
@@ -43,7 +44,7 @@
     align-items: center;
     width: 100%;
     padding: 10px 0px;
-    background-color: #f4f5f7;
+    /* background-color: var(--color-gray) */
     
 }
 .menu__list--submenu{
@@ -52,6 +53,12 @@
 }
 .menu__item{
     list-style: none;
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+}
+.menu__item--important{
+    background-color: var(--color-gray);
 }
 .menu__link{
     text-decoration: none;
@@ -60,19 +67,20 @@
     color: #4c5358;
     font-family: 'Open Sans', sans-serif;
     font-size: var(--font-link);
+    font-weight: 600;
     padding: 5px 0px;
     
 
 }
-.menu{
+.header__container{
     position: relative;
 }
-.menu__box--secundary{
+.menu{
     position: absolute;
     display: none;
 }
 
-.menu__box--activate{
+.menu--activate{
     display: initial;
     position: relative;
     left: 0;
