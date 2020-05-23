@@ -2,11 +2,15 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    /* outline: 1px solid red; */
 }
 :root{
     --font-title : 30px;
     --font-link  : 14px;
-    --color-gray :  rgba(209, 214, 221,0.5);
+    --color-font-title : #333;
+    --color-font-sutitle :#4c5358;
+    --color-gray : rgba(219, 225, 233, 0.5);
+    --color-orange:orange;
 }
 /******************************Styles Header*********************************/
 .header{
@@ -26,15 +30,24 @@
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
     font-size: var(--font-title);
-    color: #333;
+    color: var(--color-font-title);
 }
 .header__button{
-    color: #2d2c2c;
     background-color: var(--color-gray);
-    padding: 5px 15px;
+    padding: 5px;
     border:0;
-    font-size: var(--font-link);
     cursor: pointer;
+}
+.icon-menu{
+    color: #2d2c2c;
+    font-size: 1.3em;
+    
+}
+.icon-down-open{
+    font-size: 1em;
+    position: relative;
+    top: -1px;
+    
 }
 /**************************** Styles Menu ***************************/
 .header__container{
@@ -68,18 +81,21 @@
 .menu__item--important{
     position: relative;
     background-color: var(--color-gray);
+    
+    
 }
 .menu__link{
     text-decoration: none;
     text-align: center;
     display: inline-block;
-    color: #4c5358;
+    color: var(--color-font-sutitle);
     font-family: 'Open Sans', sans-serif;
     font-size: var(--font-link);
     font-weight: 600;
     padding: 6px 0px;
-    width: 100%;
+    
 }
+
 
 /*****************Styles Sub Menu*******************/
 .submenu{
@@ -93,6 +109,20 @@
     background-color: white;
     box-shadow: 0px 0px 3px 1px var(--color-gray) inset;
 }
+.menu_link--submenu{
+    width: 100%;
+}
+/* *******************************Hover*************************** */
+.menu__link:hover{
+    color: var(--color-orange);
+    border-bottom: 1px solid var(--color-orange);
+}
+.menu_link--submenu:hover{
+    background-color: var(--color-gray);
+    
+}
+
+
 /********************************Meedia Queries ***************************************/
 @media (min-width:768px){
     .header__button{
@@ -122,20 +152,18 @@
         width: 100%;
         max-width: none;
         text-align: start;
+        padding: 6px 40px 0px 10px;
     }
     .menu__item--important{
         background-color: white;
+    
+    }
+    .menu__item--submenu{
+        padding: 0;
     }
     .menu__link{
         text-decoration: none;
         text-align: start;
-        display: inline-block;
-        color: #4c5358;
-        font-family: 'Open Sans', sans-serif;
-        font-size: var(--font-link);
-        font-weight: 600;
-        padding: 11px 40px 10px 0px;
-        width: 100%;
     }
     .submenu{
         display: none;
@@ -144,10 +172,17 @@
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 115%;
+        top: 70%;
         background-color: white;
         box-shadow: 0px 0px 5px 1px var(--color-gray) ;
-        padding: 20px;
+        padding: 10px 30px;
         width: 228px;
     }
+    .icon-down-open{
+        font-size: 1em;
+        position: absolute;
+        top: 30%;
+        left: 73%;
+        
+    } 
 }
