@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
     <link rel="stylesheet" href="styles/stylesHeader.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="styles/fontello.css">
     <title>Web</title>
 </head>
 <body>
@@ -13,7 +13,7 @@
         <div class="header__container container">
             <div class="header__box">
                 <h1 class="header__title"><a class="header__titleLink" href="#">Conveyance</a></h1>
-                <button id="header__button" class="header__button">MENU</button>
+                <button id="header__button" class="header__button icon-menu"></button>
             </div>
             <nav id="menu" class="menu container">
                 <ul class="menu__list">
@@ -21,11 +21,11 @@
                     <li class="menu__item"><a class="menu__link" href="#">ABOUT</a></li>
                     <li class="menu__item"><a class="menu__link" href="#">SERVICES</a></li>
                     <li class="menu__item menu__item--important">
-                        <a class="menu__link" href="#">DROPDOWN</a>
-                        <ul class="menu__list menu__list--submenu">
-                            <li class="menu__item"><a class="menu__link" href="#">GALLERY</a></li>
-                            <li class="menu__item"><a class="menu__link" href="#">STATS</a></li>
-                            <li class="menu__item"><a class="menu__link" href="#">BLOG</a></li>
+                        <a id="linkSubMenu" class="menu__link menu__link--important" href="#">DROPDOWN <span class="icon-down-open"></span></a>
+                        <ul id="subMenu" class="menu__list submenu">
+                            <li class="menu__item menu__item--submenu"><a class="menu__link menu_link--submenu" href="#">GALLERY</a></li>
+                            <li class="menu__item menu__item--submenu"><a class="menu__link menu_link--submenu" href="#">STATS</a></li>
+                            <li class="menu__item menu__item--submenu"><a class="menu__link menu_link--submenu" href="#">BLOG</a></li>
                         </ul>
                     </li>
                     <li class="menu__item"><a class="menu__link" href="#">CONTACT</a></li>
@@ -34,7 +34,7 @@
         </div>
     </header>
 
-    <section>
+    <section class="container">
         <img src="img/230px-HTML5_logo_and_wordmark.svg.png" alt="">
     </section>
 </body>
