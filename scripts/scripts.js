@@ -7,7 +7,7 @@ if(menu && buttonMenu){
         menu.classList.toggle(`menu--activate`);
     })
 }
-if(linkSubMenu && subMenu){
+if(linkSubMenu && subMenu ){
     linkSubMenu.addEventListener(`click`,() =>{
         subMenu.classList.toggle(`submenu--activate`);
     });

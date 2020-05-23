@@ -34,13 +34,14 @@
     padding: 5px 15px;
     border:0;
     font-size: var(--font-link);
+    cursor: pointer;
 }
 /**************************** Styles Menu ***************************/
 .header__container{
     position: relative;
 }
 .menu{
-   display: none;
+    display: none;
 }
 .menu--activate{
     display: initial;
@@ -77,6 +78,7 @@
     font-size: var(--font-link);
     font-weight: 600;
     padding: 6px 0px;
+    width: 100%;
 }
 
 /*****************Styles Sub Menu*******************/
@@ -91,8 +93,61 @@
     background-color: white;
     box-shadow: 0px 0px 3px 1px var(--color-gray) inset;
 }
+/********************************Meedia Queries ***************************************/
 @media (min-width:768px){
-    .menu__button{
+    .header__button{
         display: none;
+    }
+    .header__container{
+        position: static;
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu{
+        display: block;
+        position: static;
+        padding: 0;
+        margin: 0;
+    }
+    .menu__list{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: start;
+        width: 100%;
+        padding: 0px 0px;
+    }
+    .menu__item{
+        list-style: none;
+        width: 100%;
+        max-width: none;
+        text-align: start;
+    }
+    .menu__item--important{
+        background-color: white;
+    }
+    .menu__link{
+        text-decoration: none;
+        text-align: start;
+        display: inline-block;
+        color: #4c5358;
+        font-family: 'Open Sans', sans-serif;
+        font-size: var(--font-link);
+        font-weight: 600;
+        padding: 11px 40px 10px 0px;
+        width: 100%;
+    }
+    .submenu{
+        display: none;
+    }
+    .submenu--activate{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 115%;
+        background-color: white;
+        box-shadow: 0px 0px 5px 1px var(--color-gray) ;
+        padding: 20px;
+        width: 228px;
     }
 }
