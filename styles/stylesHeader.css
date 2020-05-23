@@ -40,12 +40,11 @@
 .icon-menu{
     color: #2d2c2c;
     font-size: 1.3em;
-    
 }
 .icon-down-open{
     font-size: 1em;
-    position: relative;
-    top: -1px;
+    position: absolute;
+    top: 4.5px;
     
 }
 /**************************** Styles Menu ***************************/
@@ -92,7 +91,6 @@
     font-size: var(--font-link);
     font-weight: 600;
     padding: 6px 0px;
-    
 }
 
 
@@ -116,10 +114,14 @@
     color: var(--color-orange);
     border-bottom: 1px solid var(--color-orange);
 }
-.menu_link--submenu:hover{
+.menu_link--submenu:hover {
     background-color: var(--color-gray);
-    
 }
+
+
+
+
+
 
 
 /********************************Meedia Queries ***************************************/
@@ -153,12 +155,14 @@
         text-align: start;
         padding: 6px 40px 0px 10px;
     }
-    .menu__item--important{
-        background-color: white;
-    
-    }
-    .menu__item--submenu{
+    .menu__item--submenu{ 
         padding: 0;
+    }
+    .menu__item--important{
+        position: relative;
+        background-color: white;
+        
+        
     }
     .menu__link{
         text-decoration: none;
@@ -167,7 +171,7 @@
     .submenu{
         display: none;
     }
-    .submenu--activate{
+    .menu__item--important:hover .submenu{
         display: flex;
         flex-direction: column;
         position: absolute;
@@ -185,3 +189,7 @@
         
     } 
 }
+
+
+
+
