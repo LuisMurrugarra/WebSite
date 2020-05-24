@@ -180,6 +180,7 @@
         box-shadow: 0px 0px 5px 1px var(--color-gray) ;
         padding: 10px 30px;
         width: 228px;
+        z-index: 1;
     }
     .icon-down-open{
         font-size: 1em;
