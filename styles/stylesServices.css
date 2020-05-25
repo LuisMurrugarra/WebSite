@@ -1,0 +1,17 @@
+.read__articles{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rebeccapurple; */
+    /* padding: 55px 10px; */
+}
+.article{
+    display: block;
+    width: 300px;
+    height: 200px;
+    margin: 7px;
+    outline:1px solid red;
+    
+}
