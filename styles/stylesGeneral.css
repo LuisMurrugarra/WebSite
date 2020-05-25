@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    /* Header */
+    --font-title : 30px;
+    --font-link  : 14px;
+    --color-font-title : #333;
+    --color-font-sutitle :#4c5358;
+    --color-gray : rgba(219, 225, 233, 0.5);
+    --color-orange:orange;
+    /* Section About */
+    --color-black:#212529;
+    --color-gray-dark:#8c9398;
+    --max-width-content:680px;
+    --max-width-content-M:992px;
+    --font-title-content:2em;
+    --font--subtitle-content:1.4em;
+    --font--paragraph-content:1em;
+}
