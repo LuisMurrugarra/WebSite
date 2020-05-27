@@ -4,20 +4,13 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center; 
-     /* background-color: rebeccapurple; */
-    /* padding: 55px 10px; */
 }
 .article{
     display: flex;
     width: 100%;
     flex-direction: column;
     align-items: center;
-    /* max-width: 315px; */
-    /* outline:1px solid red; */
-    /* background-color: red; */
     margin: 10px 50px;
-    
-    
 }
 .article__icon{
     font-size: 3em;
@@ -58,7 +51,6 @@
         font-size: 3em;
     }
     .article:nth-child(3n+2){
-        /* background-color: red; */
         margin: 30px 40px;
     }
 }
