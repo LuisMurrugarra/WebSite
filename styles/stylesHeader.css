@@ -1,3 +1,4 @@
+
 /******************************Styles Header*********************************/
 .header{
     width: 100%;
@@ -112,7 +113,7 @@
 
 
 /********************************Meedia Queries ***************************************/
-@media (min-width:768px){
+@media (min-width:812px){
     .header__button{
         display: none;
     }
@@ -140,7 +141,7 @@
         width: 100%;
         max-width: none;
         text-align: start;
-        padding: 6px 40px 0px 10px;
+        padding: 8px 40px 0px 10px;
     }
     .menu__item--submenu{ 
         padding: 0;
